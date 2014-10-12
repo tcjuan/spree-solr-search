@@ -10,8 +10,3 @@ Deface::Override.new(:virtual_path => "spree/products/index",
                       :partial => "spree/products/suggestion",
                       :disabled => false)
 
-Deface::Override.new(:virtual_path => "spree/shared/_products",
-                      :name => "override_paginated_products_var",
-                      :insert_top => "h6.search-results-title",
-                      :text => "<% paginated_products = @searcher.products(current_store.id) %>",
-                      :disabled => false)
